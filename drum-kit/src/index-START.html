@@ -60,7 +60,6 @@
 
 <script>
   function removeTransition(e) {
-    if (e.propertyName !== 'transform') return;
     e.target.classList.remove('playing');
   }
 
@@ -71,10 +70,10 @@
     key.classList.add('playing');
     audio.currentTime = 0;
     audio.play();
-;  }
+  }
 
   function captureKeyboardClicks(){
-    var elements = document.querySelectorAll('key'); // Array of .keys in the code
+    var elements = document.querySelectorAll('.key'); // Array of .keys in the code
     elements.forEach(key => key.addEventListener('transitionend', removeTransition));
     window.addEventListener('keydown', playAudio);
   }
