@@ -42,7 +42,7 @@
         color: #ffffff;
         flex: 1;
         text-align: center;
-        align-items: center;
+        align-content: center;
         /* Safari transitionend event.propertyName === flex */
         /* Chrome + FF transitionend event.propertyName === flex-grow */
         transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
@@ -53,26 +53,32 @@
       }
 
       .panel1 {
-        background-image: url(./purple1.jpeg);
+        background-image: url(./assets/purple1.jpeg);
       }
       .panel2 {
-        background-image: url(./shore.jpeg);
+        background-image: url(./assets/shore.jpeg);
       }
       .panel3 {
         background-image: url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d);
       }
       .panel4 {
-        background-image: url(./pink.jpeg);
+        background-image: url(./assets/pink.jpeg);
       }
       .panel5 {
-        background-image: url(./alone.jpeg);
+        background-image: url(./assets/alone.jpeg);
       }
 
       /* Flex Children */
       .panel > * {
+        display: flex;
+        flex-direction: column;
         margin: 0;
         width: 100%;
         transition: transform 0.5s;
+      }
+
+      .panel:hover {
+        cursor: pointer;
       }
 
       .panel p {
@@ -86,47 +92,44 @@
         font-size: 4em;
       }
 
-      .panel.open {
-        font-size: 40px;
-      }
-
       .panel.active {
         font-size: 30px;
         display: flex;
+        align-items: center;
         flex: 3;
       }
 
-      .panel.active p:nth-child(2) {
-        font-size: 2em;
+      .hide{
+        visibility: hidden;
       }
 
     </style>
 
     <div class="panels">
-      <div class="panel active panel1">
+      <div class="panel panel1">
         <p>Hey</p>
         <p>Let's</p>
         <p>Dance</p>
       </div>
       <div class="panel panel2">
-        <p>Give</p>
-        <p>Take</p>
-        <p>Receive</p>
+        <p class="hide">Give</p>
+        <p class="show">Take</p>
+        <p class="hide">Receive</p>
       </div>
-      <div class="panel panel3">
-        <p>Experience</p>
-        <p>It</p>
-        <p>Today</p>
+      <div class="panel active panel3">
+        <p class="hide">Experience</p>
+        <p class="show">It</p>
+        <p class="hide">Today</p>
       </div>
       <div class="panel panel4">
-        <p>Give</p>
-        <p>All</p>
-        <p>You can</p>
+        <p class="hide">Give</p>
+        <p class="show">All</p>
+        <p class="hide">You can</p>
       </div>
       <div class="panel panel5">
-        <p>Life</p>
-        <p>In</p>
-        <p>Motion</p>
+        <p class="hide">Life</p>
+        <p class="show">In</p>
+        <p class="hide">Motion</p>
       </div>
     </div>
 
