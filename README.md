@@ -5,4 +5,4 @@
 - Day 3: CSS variables + Js ✅
 - Day 4: Flex Panel gallery -> ✅ css corrections in-progress
 
-- Day 5: Coming soon... Check out my Twitch channel for more
+- Day 5: Stay tuned... Check out my Twitch channel for more
