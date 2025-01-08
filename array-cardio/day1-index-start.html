@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Array Cardio 💪</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .button-row {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+      }
+
+      .button-row .button-sort,
+      .button-row .button-filter {
+        color: #0420aa;
+        text-transform: uppercase;
+        background-color: #fff;
+        outline: none;
+        font-size: 16px;
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: 1.2px solid #909090;
+      }
+
+      .button-sort:hover,
+      .button-filter:hover {
+        color: #0420aa;
+        font-weight: 600;
+        background-color: #f3f3f3;
+        cursor: pointer;
+      }
+
+      .button-filter {
+        margin-left: 30px;
+      }
+
+      .customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      .customers td,
+      .customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      .customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .customers tr:hover {
+        background-color: #ddd;
+      }
+
+      .customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #0420aa;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Array Cardio</h1>
+
+    <div class="button-row">
+      <!-- alphabetically arrange -->
+      <button
+        type="button"
+        class="button-sort"
+        id="sort-button"
+        onclick="sort()"
+      >
+        Sort
+      </button>
+      <!-- filter based on a condition-->
+      <button
+        type="button"
+        class="button-filter"
+        id="filter-button"
+        onclick="filter()"
+      >
+        Filter
+      </button>
+    </div>
+    <p id="array-sorted">Alphabetically sorted!!!</p>
+    <p id="array-filtered">Filtering of Array done!!!</p>
+    <table class="customers" id="customerTable">
+      <tr>
+        <th>Index</th>
+        <th>Vehicles</th>
+      </tr>
+    </table>
+    <script>
+      // 1. sort Exercise
+      // Sort the vehicles alphabetically and group them
+      const vehicles = [
+        "car",
+        "bike",
+        "car",
+        "truck",
+        "truck",
+        "walk",
+        "car",
+        "van",
+        "bike",
+        "walk",
+        "car",
+        "van",
+        "car",
+        "truck",
+      ];
+      let table = document.getElementById("customerTable");
+      document.getElementById("array-sorted").style.display = "none";
+      for (let i = 0; i < vehicles.length; i++) {
+        var row = table.insertRow(i + 1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = i;
+        cell2.innerHTML = vehicles[i];
+      }
+
+      //let vehiclesSorted = vehicles;
+      //vehiclesSorted  (points to the copy of vehicles in memory, new variable not present in memory)=> vehicles (is stored in memory)
+      let vehiclesSorted = [...vehicles]; // Shallow copy
+      //vehiclesSorted, vehicles (stored in memory) (both holding two different values)
+
+      var buttonElement = document.getElementById("sort-button");
+      sort = () => {
+        vehiclesSorted.sort();
+        console.log(Number(vehiclesSorted.length) - 1, vehiclesSorted);
+        for (let i = vehiclesSorted.length; i > 0; i--) {
+          table.deleteRow(i); // removing all original arrays rows , i+1 is deleted as heading should be present
+        }
+
+        for (let i = 0; i < vehiclesSorted.length; i++) {
+          var row = table.insertRow(i + 1);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          cell1.innerHTML = i;
+          cell2.innerHTML = vehiclesSorted[i];
+        }
+        document.getElementById("array-sorted").style.display = "block";
+      };
+
+      filter = () => {
+        inventors.sort();
+      };
+
+      const inventors = [
+        { first: "Albert", last: "Einstein", year: 1879, passed: 1955 },
+        { first: "Isaac", last: "Newton", year: 1643, passed: 1727 },
+        { first: "Galileo", last: "Galilei", year: 1564, passed: 1642 },
+        { first: "Marie", last: "Curie", year: 1867, passed: 1934 },
+        { first: "Johannes", last: "Kepler", year: 1571, passed: 1630 },
+        { first: "Nicolaus", last: "Copernicus", year: 1473, passed: 1543 },
+        { first: "Max", last: "Planck", year: 1858, passed: 1947 },
+        { first: "Katherine", last: "Blodgett", year: 1898, passed: 1979 },
+        { first: "Ada", last: "Lovelace", year: 1815, passed: 1852 },
+        { first: "Sarah E.", last: "Goode", year: 1855, passed: 1905 },
+        { first: "Lise", last: "Meitner", year: 1878, passed: 1968 },
+        { first: "Hanna", last: "Hammarström", year: 1829, passed: 1909 },
+      ];
+      const people = [
+        "Bernhard, Sandra",
+        "Bethea, Erin",
+        "Becker, Carl",
+        "Bentsen, Lloyd",
+        "Beckett, Samuel",
+        "Blake, William",
+        "Berger, Ric",
+        "Beddoes, Mick",
+        "Beethoven, Ludwig",
+        "Belloc, Hilaire",
+        "Begin, Menachem",
+        "Bellow, Saul",
+        "Benchley, Robert",
+        "Blair, Robert",
+        "Benenson, Peter",
+        "Benjamin, Walter",
+        "Berlin, Irving",
+        "Benn, Tony",
+        "Benson, Leana",
+        "Bent, Silas",
+        "Berle, Milton",
+        "Berry, Halle",
+        "Biko, Steve",
+        "Beck, Glenn",
+        "Bergman, Ingmar",
+        "Black, Elk",
+        "Berio, Luciano",
+        "Berne, Eric",
+        "Berra, Yogi",
+        "Berry, Wendell",
+        "Bevan, Aneurin",
+        "Ben-Gurion, David",
+        "Bevel, Ken",
+        "Biden, Joseph",
+        "Bennington, Chester",
+        "Bierce, Ambrose",
+        "Billings, Josh",
+        "Birrell, Augustine",
+        "Blair, Tony",
+        "Beecher, Henry",
+        "Biondo, Frank",
+      ];
+
+      // 2. Reduce Exercise
+      // Sum up the instances of each of these
+
+      // Array.prototype.filter()
+      // 3. Filter the list of inventors for those who were born in the 1500's
+
+      // Array.prototype.map()
+      // 4. Give us an array of the inventors first and last names
+
+      // Array.prototype.sort()
+      // 5. Sort the inventors by birthdate, oldest to youngest
+
+      // Array.prototype.reduce()
+      // 6. How many years did all the inventors live all together?
+
+      // 7. Sort the inventors by years lived
+
+      // 8. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+      // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+    </script>
+  </body>
+</html>
