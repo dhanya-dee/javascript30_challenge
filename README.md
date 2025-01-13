@@ -5,7 +5,13 @@
 - Day 3: CSS variables + Js ✅
 - Day 4: Flex Panel gallery -> ✅ css corrections in-progress
 
+( Day 4 & 7 : as per Wes Bos )
 - Day 5: Sorting Array, cardio and dynamic HTML template table elements to showcase array functions(With a twist: added HTML Table to link with array functionality)
-- Day 6: Filtering Array cardio exercises
+- Day 6: Reduce function
+- Day 7: Filtering Array and Maping Array
+- Day 8: Day 2 challenge_Array _Cardio (some,every,findIndex) ->> ONLY ON MY GITHUB PAGE!
 
-Stay tuned... Check out my Twitch channel for more
+( Day 6 : as per Wes Bos )
+- Day 9: Ajax Type Ahead 
+
+** Stay tuned... Check out my Twitch channel for more
