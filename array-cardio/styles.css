@@ -1,0 +1,85 @@
+body{
+  padding: 3.125rem 0rem;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0px;
+}
+
+.nav-link{
+  color: #0420aa !important;
+  font-weight: 600;
+}
+
+.button-row .button-sort,
+.button-row .button-reduce,
+.button-row .button-filter,
+.button-row .button-map {
+  color: #0420aa;
+  text-transform: uppercase;
+  background-color: #fff;
+  outline: none;
+  font-size: 16px;
+  padding: 5px 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1.2px solid #909090;
+}
+
+.text-displayed{
+  color: #0420aa;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.button-sort:hover,
+.button-filter:hover,
+.button-reduce:hover,
+.button-map:hover {
+  color: #0420aa;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+.button-sort:active,
+.button-filter:active,
+.button-reduce:active,
+.button-map:active,
+.button-sort:visited,
+.button-filter:visited,
+.button-reduce:visited,
+.button-map:visited {
+  color: #ff0000;
+  background-color: #f3f3f3;
+}
+
+.customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 0px 100px;
+}
+
+.customers td,
+.customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.customers tr:hover {
+  background-color: #ddd;
+}
+
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0420aa;
+  color: white;
+}
