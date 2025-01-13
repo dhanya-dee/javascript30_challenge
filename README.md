@@ -3,15 +3,17 @@
 - Day 1: Drum Kit (Js + DOM manipulation) ✅
 - Day 2: Js + Clock functionality ✅
 - Day 3: CSS variables + Js ✅
-- Day 4: Flex Panel gallery -> ✅ css corrections in-progress
+- Day 4: Flex Panel gallery ✅ 
 
 ( Day 4 & 7 : as per Wes Bos )
-- Day 5: Sorting Array, cardio and dynamic HTML template table elements to showcase array functions(With a twist: added HTML Table to link with array functionality)
-- Day 6: Reduce function
-- Day 7: Filtering Array and Maping Array
-- Day 8: Day 2 challenge_Array _Cardio (some,every,findIndex) ->> ONLY ON MY GITHUB PAGE!
+- Day 5: Sorting Array, cardio and dynamic HTML template table elements to showcase array functions✅ 
+  (With a twist: added HTML Table to link with array functionality)
+- Day 6: Reduce function ✅ 
+- Day 7: Filtering Array and Maping Array ✅ 
+- Day 8: Day 2 challenge_Array _Cardio ✅ - in-progress
+  (some,every,findIndex) ->> ONLY ON MY GITHUB PAGE!
 
 ( Day 6 : as per Wes Bos )
-- Day 9: Ajax Type Ahead 
+- Day 9: Ajax Type Ahead -> Up next!!!!
 
 ** Stay tuned... Check out my Twitch channel for more
