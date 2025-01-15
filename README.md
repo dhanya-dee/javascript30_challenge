@@ -14,6 +14,7 @@
   (some,every,findIndex) ->> ONLY ON MY GITHUB PAGE!
 
 ( Day 6 : as per Wes Bos )
-- Day 9: Ajax Type Ahead -> Up next!!!!
+- Day 9: Ajax Type Ahead ✅ - in-progress
+- Day 10: Fun with HTML Canvas-> Up next!!!!
 
 ** Stay tuned... Check out my Twitch channel for more
