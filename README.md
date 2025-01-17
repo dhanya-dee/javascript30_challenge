@@ -15,6 +15,8 @@
 
 ( Day 6 : as per Wes Bos )
 - Day 9: Ajax Type Ahead ✅ - in-progress
+
+( Day 8 : as per Wes Bos )
 - Day 10: Fun with HTML Canvas-> Up next!!!!
 
 ** Stay tuned... Check out my Twitch channel for more
