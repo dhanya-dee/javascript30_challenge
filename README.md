@@ -21,3 +21,4 @@
 - Day 11: 14 Must Know Dev Tools Tricks -> Up Next! **( Day 9 : as per Wes Bos )
 
 ** Stay tuned... Check out my Twitch channel for more
+https://www.twitch.tv/changing_spheres/ -> Follow on twitch for real-time updates on when I go LIVE!
