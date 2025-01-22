@@ -18,7 +18,10 @@
 
 - Day 10: Fun with HTML Canvas ✅  **( Day 8 : as per Wes Bos )
 
-- Day 11: 14 Must Know Dev Tools Tricks -> Up Next! **( Day 9 : as per Wes Bos )
+- Day 11: 14 Must Know Dev Tools Tricks  ✅  **( Day 9 : as per Wes Bos )
+
+- Day 12: Hold Shift to Check Multiple Checkboxes -> Up Next! **( Day 10 : as per Wes Bos )
+
 
 ** Stay tuned... Check out my Twitch channel for more
 https://www.twitch.tv/changing_spheres/ -> Follow on twitch for real-time updates on when I go LIVE!
