@@ -23,7 +23,11 @@
 
 - Day 13: Custom HTML5 Video Player ✅  **( Day 11 : as per Wes Bos )  
 
-- Day 14: Key Sequence Detection (KONAMI CODE) -> Up Next! **( Day 12 : as per Wes Bos )
+- Day 14: Key Sequence Detection (KONAMI CODE) ✅ **( Day 11 : as per Wes Bos )  
+
+-Day 15: Slide in on scroll -> Up NEXT!  **( Day 12 : as per Wes Bos )  
+
+Half way through the challenge -> Going to start game development- drop in your ideas on chat! Coming very soon...
 
 
 
