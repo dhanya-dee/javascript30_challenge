@@ -4,6 +4,9 @@ let source = document.createElement('source');
 let playBtn = document.querySelector('#play');
 let progress = player.querySelector('.progress');
 let progressBar = player.querySelector('.progress__filled');
+let volumeRange = player.querySelector('.volume');//class for the ranges
+let speedRange = player.querySelector('.speed');//class for the ranges
+
 
 function play(){
     const method = video.paused ? 'play' : 'pause';
@@ -31,10 +34,23 @@ function scrub(e) {
     video.currentTime = scrubTime;
 }
 
+function volumeChanges() {
+    video[this.name] = this.value;
+}
+
+function playbackSpeedChanges(){
+    video[this.name] = this.value;
+}
+
 video.addEventListener('timeupdate', handleProgress);
+
 
 let mousedown = false;
 progress.addEventListener('click', scrub);
 progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
 progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
+
+
+volumeRange.addEventListener('change', volumeChanges);
+speedRange.addEventListener('change', playbackSpeedChanges);
