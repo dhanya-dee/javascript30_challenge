@@ -23,8 +23,16 @@
 
 - Day 13: Custom HTML5 Video Player ✅  **( Day 11 : as per Wes Bos )  
 
-- Day 14: Key Sequence Detection (KONAMI CODE) -> Up Next! **( Day 12 : as per Wes Bos )
+- Day 14: Key Sequence Detection (KONAMI CODE) ✅  **( Day 12 : as per Wes Bos )
 
+
+- Day 15: Slide in on scroll ✅  **( Day 13 : as per Wes Bos )
+
+- Day 16: References Vs Copy(Objs & Arrays) -> Up Next  **( Day 14 : as per Wes Bos )
+
+- Day 17: LocalStorage and Event Delegation -> Up Next  **( Day 15 : as per Wes Bos )
+
+- ->> NEW GAME DEVELOPMENT STREAM (SPECIAL STREAMS, mid point on 30 day challenge)
 
 
 ** Stay tuned... Check out my Twitch channel for more
