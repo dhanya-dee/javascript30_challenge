@@ -27,12 +27,11 @@
 
 - Day 15: Slide in on scroll ✅  **( Day 13 : as per Wes Bos )
 
-- Day 16: References Vs Copy(Objs & Arrays) -> Up Next  **( Day 14 : as per Wes Bos )
+- Day 16: References Vs Copy(Objs & Arrays) ✅  **( Day 14 : as per Wes Bos )
 
-- Day 17: LocalStorage and Event Delegation -> Up Next  **( Day 15 : as per Wes Bos )
+- Day 17: LocalStorage and Event Delegation -> In-progress  **( Day 15 : as per Wes Bos )
 
-- ->> NEW GAME DEVELOPMENT STREAM (SPECIAL STREAMS, mid point on 30 day challenge)
+- ->> NEW GAME DEVELOPMENT STREAM (SPECIAL STREAMS, mid point of 30 day challenge spin off)
 
 
-** Stay tuned... Check out my Twitch channel for more
-https://www.twitch.tv/changing_spheres/ -> Follow on twitch for real-time updates on when I go LIVE!
+** Stay tuned... Check out [my Twitch channel](https://www.twitch.tv/changing_spheres/) for more -> Follow on twitch for real-time updates on when I go LIVE!
